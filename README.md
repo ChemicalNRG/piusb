@@ -31,10 +31,10 @@ Turn your \$10 Raspberry Pi Zero into a web USB stick!
 4. Type in `sudo raspi-config`, and "Expand Filesystem", now, if you'd like, you may change the hostname to something else, rather than "raspberry", for example, mine is "usb"
 5. Restart when prompted
 6. After you restart, copy and paste the following command:
-   `sudo apt update && sudo apt install apache2 libapache2-mod-php mariadb-server mariadb-client php-bz2 php-mysql php-curl php-gd php-imagick php-intl php-mbstring php-xml php-zip zip unzip -y && sudo a2enmod rewrite`
+   `sudo apt update && sudo apt install apache2 git libapache2-mod-php mariadb-server mariadb-client php-bz2 php-mysql php-curl php-gd php-imagick php-intl php-mbstring php-xml php-zip zip unzip -y && sudo a2enmod rewrite`
 7. During that command, MariaDB will prompt you to select a password, type in any password (but remember it)
 8. Type `cd /var/www` (if you get an error, type `sudo mkdir /var/www && cd /var/www`)
-9. To give access to the system, type `chmod 744 .` (DON'T MISS THE DOT AT THE END)
+9. To give access to the system, type `sudo chmod 744 .` (DON'T MISS THE DOT AT THE END)
 10. Type in `sudo git clone https://github.com/itsnebulalol/piusb.git`
 11. Type `sudo mv piusb/. .` (AGAIN, DON'T MISS THE DOTS AT THE END)
 12. Now, you can put in `sudo rm -rf piusb`
