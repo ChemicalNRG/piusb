@@ -35,11 +35,9 @@ Turn your \$10 Raspberry Pi Zero into a web USB stick!
 7. During that command, MariaDB will prompt you to select a password, type in any password (but remember it)
 8. Type `cd /var/www` (if you get an error, type `sudo mkdir /var/www && cd /var/www`)
 9. To give access to the system, type `sudo chmod 744 .` (DON'T MISS THE DOT AT THE END)
-10. Type in `sudo git clone https://github.com/itsnebulalol/piusb.git`
-11. Type `sudo mv piusb/. .` (AGAIN, DON'T MISS THE DOTS AT THE END)
-12. Now, you can put in `sudo rm -rf piusb`
-13. Navagate your browser to `http://raspberrypi.local/index.html` (or a different hostname if you changed it before)
-14. And boom! Now you have your piUSB setup! To install Owncloud, keep reading on.
+10. Type in `sudo git clone https://github.com/itsnebulalol/piusb.git .` (DON'T MISS THE DOT AT THE END)
+11. Navigate your browser to `http://raspberrypi.local/index.html` (or a different hostname if you changed it before)
+12. And boom! Now you have your piUSB setup! To install Owncloud, keep reading on.
 
 #### Owncloud Setup
 
