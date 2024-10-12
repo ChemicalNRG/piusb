@@ -32,12 +32,11 @@ Turn your \$10 Raspberry Pi Zero into a web USB stick!
 5. Restart when prompted
 6. After you restart, copy and paste the following command:
    `sudo apt update && sudo apt install apache2 git libapache2-mod-php mariadb-server mariadb-client php-bz2 php-mysql php-curl php-gd php-imagick php-intl php-mbstring php-xml php-zip zip unzip -y && sudo a2enmod rewrite`
-7. During that command, MariaDB will prompt you to select a password, type in any password (but remember it)
-8. Type `cd /var/www/html` (if you get an error, type `sudo mkdir /var/www/html && cd /var/www/html`)
-9. To give access to the system, type `sudo chmod 744 .` (DON'T MISS THE DOT AT THE END)
-10. Type in `sudo git clone https://github.com/itsnebulalol/piusb.git .` (DON'T MISS THE DOT AT THE END)
-11. Navigate your browser to `http://raspberrypi.local/index.html` (or a different hostname if you changed it before)
-12. And boom! Now you have your piUSB setup! To install Owncloud, keep reading on.
+7. Type `cd /var/www/html` (if you get an error, type `sudo mkdir /var/www/html && cd /var/www/html`)
+8. To give access to the system, type `sudo chmod 744 .` (DON'T MISS THE DOT AT THE END)
+9. Type in `sudo git clone https://github.com/itsnebulalol/piusb.git .` (DON'T MISS THE DOT AT THE END)
+10. Navigate your browser to `http://raspberrypi.local/index.html` (or a different hostname if you changed it before)
+11. And boom! Now you have your piUSB setup! To install Owncloud, keep reading on.
 
 #### Owncloud Setup
 
